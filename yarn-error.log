@@ -1,0 +1,48 @@
+Arguments: 
+  /home/sam/.nvm/versions/node/v14.16.1/bin/node /home/sam/.nvm/versions/node/v14.16.1/bin/yarn add dotenv @nomiclabs/hardhat-etherscan @nomiclabs/hardhat-solhint @tenderly/hardhat-tenderly @nomiclabs/hardhat-waffle hardhat-abi-exporter hardhat-deploy hardhat-deploy-ethers hardhat-gas-reporter hardhat-spdx-license-identifier hardhat-typechain hardhat-watcher solidity-coverage --dev
+
+PATH: 
+  /home/sam/.nvm/versions/node/v14.16.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  14.16.1
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/sam/Projects/anyswap-testnets/package.json: Unexpected token : in JSON at position 8
+      at JSON.parse (<anonymous>)
+      at /home/sam/.nvm/versions/node/v14.16.1/lib/node_modules/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/home/sam/.nvm/versions/node/v14.16.1/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /home/sam/.nvm/versions/node/v14.16.1/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  "name": "anyswap-testnets",
+    "version": "0.1.0",
+    "license": "ISC",
+    "description": "Anyswap Create2Deploy on various testnets",
+    "scripts": {
+      "build": "hardhat compile",
+      "console": "hardhat console",
+      "testnet:deploy": "npm ropsten:deploy && npm matictestnet:deploy && npm fantomtestnet:deploy && npm bsctestnet:deploy",
+      "local:deploy": "hardhat --network localhost deploy",
+      "ropsten:deploy": "hardhat --network ropsten deploy",
+      "matictestnet:deploy": "hardhat --network mumbai deploy",
+      "fantomtestnet:deploy": "hardhat --network fantom-testnet deploy",
+      "bsctestnet:deploy": "hardhat --network bsc-testnet deploy"
+    },
+    "keywords": [],
+    "author": "glu",
+    "dependencies": {}
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
