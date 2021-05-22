@@ -1,29 +1,28 @@
 // hardhat.config.ts
 
-import "dotenv/config"
-import "@nomiclabs/hardhat-etherscan"
-import "@nomiclabs/hardhat-solhint"
-import "@tenderly/hardhat-tenderly"
-import "@nomiclabs/hardhat-waffle"
-import "hardhat-abi-exporter"
-import "hardhat-deploy"
-import "hardhat-deploy-ethers"
-import "hardhat-gas-reporter"
-import "hardhat-spdx-license-identifier"
-import "hardhat-typechain"
-import "hardhat-watcher"
-import "solidity-coverage"
-import "./tasks"
+require("dotenv/config")
+require("@nomiclabs/hardhat-etherscan")
+require("@nomiclabs/hardhat-solhint")
+require("@tenderly/hardhat-tenderly")
+require("@nomiclabs/hardhat-waffle")
+require("hardhat-abi-exporter")
+require("hardhat-deploy")
+require("hardhat-deploy-ethers")
+require("hardhat-gas-reporter")
+require("hardhat-spdx-license-identifier")
+require("hardhat-typechain")
+require("hardhat-watcher")
+require("solidity-coverage")
 
-import { HardhatUserConfig } from "hardhat/types"
-import { removeConsoleLog } from "hardhat-preprocessor"
+let { HardhatUserConfig } = require("hardhat/types")
+let { removeConsoleLog } = require("hardhat-preprocessor")
 
 const accounts = {
   mnemonic: process.env.MNEMONIC || "test test test test test test test test test test test junk",
   // accountsBalance: "990000000000000000000",
 }
 
-const config: HardhatUserConfig = {
+module.exports = {
   abiExporter: {
     path: "./abi",
     clear: false,
@@ -56,7 +55,6 @@ const config: HardhatUserConfig = {
       saveDeployments: true,
       tags: ["local"],
     },
-    hardhat: {
     ropsten: {
       url: `https://ropsten.infura.io/v3/${process.env.INFURA_API_KEY}`,
       accounts,
@@ -129,8 +127,6 @@ const config: HardhatUserConfig = {
       tasks: ["compile"],
       files: ["./contracts"],
       verbose: true,
+      },
     },
-  },
-}
-
-export default config
+  }
