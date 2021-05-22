@@ -27,13 +27,14 @@ BSC: [https://testnet.binance.org/faucet-smart](https://testnet.binance.org/fauc
 
 
 
-5. Run `npm testnet:deploy` for public testnets, `npm local:deploy` for local deploy
-
+5. Run `npm testnet:deploy` for public testnets, `npm local:deploy` for local deploy .Outputted address is factoryAddress in step 7
 
 6. Verify Deploy
 
-7. Deploy AnyswapV5ERC20.sol: Head over to [https://github.com/connext/chaindata](https://github.com/connext/chaindata) and follow instructions in deploy.md, replacing factoryAddress with address of deploy contract AnyswapV5ERC20.sol on each chain (Line: 64)
-
+7. Deploy AnyswapV5ERC20.sol: 
+* Head over to [https://github.com/connext/chaindata](https://github.com/connext/chaindata) and follow instructions in deploy.md
+* replacing factoryAddress with address of deploy contract AnyswapCreate2Deployer.sol on each chain (Line: 64)
+* Replace mpc with account 2 from metamask
 
 ____
 Note: Deploy without MNEMONIC in .env (check .env.example), add MNEMONIC and delete deployments & run again, it defaults to test test ... addr
