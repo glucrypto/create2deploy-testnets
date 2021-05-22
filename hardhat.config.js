@@ -1,6 +1,6 @@
 // hardhat.config.ts
 
-require("dotenv/config")
+require("dotenv").config()
 require("@nomiclabs/hardhat-etherscan")
 require("@nomiclabs/hardhat-solhint")
 require("@tenderly/hardhat-tenderly")
@@ -52,7 +52,7 @@ module.exports = {
     localhost: {
       url: "http://127.0.0.1:8545",
       live: false,
-      saveDeployments: true,
+      saveDeployments: false,
       tags: ["local"],
     },
     ropsten: {
@@ -60,7 +60,7 @@ module.exports = {
       accounts,
       chainId: 3,
       live: true,
-      saveDeployments: true,
+      saveDeployments: false,
       tags: ["staging"],
       gasPrice: 5000000000,
       gasMultiplier: 2,
@@ -70,7 +70,7 @@ module.exports = {
       accounts,
       chainId: 4002,
       live: true,
-      saveDeployments: true,
+      saveDeployments: false,
       tags: ["staging"],
       gasMultiplier: 2,
     },
@@ -79,7 +79,7 @@ module.exports = {
       accounts,
       chainId: 80001,
       live: true,
-      saveDeployments: true,
+      saveDeployments: false,
       tags: ["staging"],
       gasMultiplier: 2,
     },
@@ -88,7 +88,7 @@ module.exports = {
       accounts,
       chainId: 97,
       live: true,
-      saveDeployments: true,
+      saveDeployments: false,
       tags: ["staging"],
       gasMultiplier: 2,
     },

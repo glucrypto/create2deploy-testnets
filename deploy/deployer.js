@@ -1,12 +1,14 @@
 module.exports = async function ({ getNamedAccounts, deployments }) {
-  const { deploy } = deployments
+	const { deploy,deterministic } = deployments
 
-  const { deployer } = await getNamedAccounts()
+  	const { deployer } = await getNamedAccounts()
 
-  await deploy("AnyswapCreate2Deployer", {
-    from: deployer,
-    log: true,
-  })
+	let deployOut = await deterministic("AnyswapCreate2Deployer",{
+		from: deployer,
+	});
+
+	let deployRes = await deployOut.deploy();
+	console.log(`Contract Address: ${deployOut.address} from: ${deployer}`)
 }
 
 module.exports.tags = ["AnyswapCreate2Deployer"]
