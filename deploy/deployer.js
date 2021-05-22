@@ -3,11 +3,11 @@ module.exports = async function ({ getNamedAccounts, deployments }) {
 
   	const { deployer } = await getNamedAccounts()
 
-	let deployOut = await deterministic("AnyswapCreate2Deployer",{
+	const deployOut = await deploy("AnyswapCreate2Deployer",{
 		from: deployer,
+		deterministicDeployment:false
 	});
 
-	let deployRes = await deployOut.deploy();
 	console.log(`Contract Address: ${deployOut.address} from: ${deployer}`)
 }
 

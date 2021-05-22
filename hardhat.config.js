@@ -38,7 +38,7 @@ module.exports = {
     deployer: {
       default: 0,
     },
-    dev: {
+    account2: {
       default: 1,
     },
     account3: {
