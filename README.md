@@ -32,7 +32,7 @@ BSC: [https://testnet.binance.org/faucet-smart](https://testnet.binance.org/fauc
 
 6. Verify Deploy
 
-7. Deploy AnyswapV5ERC20.sol: Head over to [https://github.com/connext/chaindata](https://github.com/connext/chaindata) and follow instructions in deploy.md, replacing MPC with address of deploy contract AnyswapV5ERC20.sol on each chain (Line: 53)
+7. Deploy AnyswapV5ERC20.sol: Head over to [https://github.com/connext/chaindata](https://github.com/connext/chaindata) and follow instructions in deploy.md, replacing factoryAddress with address of deploy contract AnyswapV5ERC20.sol on each chain (Line: 64)
 
 
 ____
@@ -41,6 +41,6 @@ Note: Deploy without MNEMONIC in .env (check .env.example), add MNEMONIC and del
 
 If you're feeling lazy:
 
-Working MPC:
+Working factoryAddress (Line 64):
 `0x3C2f68E559a2e2e3f5810F2Aa1Fe779C9BcDC194`
 
