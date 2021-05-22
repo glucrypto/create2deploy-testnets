@@ -9,9 +9,9 @@
 
 Network Name | RPC URL           | ChainId  | Symbol | Explorer | Tutorial
 | ----------------- |:-----------------:| --------:|-------:|---------:|---------:|
-| FTM        | [https://rpc.testnet.fantom.network/](https://rpc.testnet.fantom.network/​) | `0xfa2` | FTM   | [https://testnet.ftmscan.com/](https://testnet.ftmscan.com/)     | [Tutorial](https://docs.fantom.foundation/tutorials/set-up-metamask-testnet)|
-| Mumbai (MATIC Testnet)      | [https://rpc-mumbai.maticvigil.com](https://rpc-mumbai.maticvigil.com)                |  `80001` |  MATIC    |  [https://explorer-mumbai.maticvigil.com](https://explorer-mumbai.maticvigil.com)    | [Tutorial](https://docs.matic.network/docs/develop/network-details/network/)| 
-| BSC        | [https://bsc-dataseed.binance.org/](https://bsc-dataseed.binance.org/)      |  `0x61` |  BNB    |  [https://testnet.bscscan.com](https://testnet.bscscan.com)    | [Tutorial](https://docs.binance.org/smart-chain/wallet/metamask.html)|
+| FTM        | [https://rpc.testnet.fantom.network/](https://rpc.testnet.fantom.network/​)| `0xfa2` | FTM   | [https://testnet.ftmscan.com/](https://testnet.ftmscan.com/)| [Tutorial](https://docs.fantom.foundation/tutorials/set-up-metamask-testnet)|
+| Mumbai (MATIC Testnet)| [https://rpc-mumbai.maticvigil.com](https://rpc-mumbai.maticvigil.com)                |  `80001` |  MATIC    |  [https://explorer-mumbai.maticvigil.com](https://explorer-mumbai.maticvigil.com)| [Tutorial](https://docs.matic.network/docs/develop/network-details/network/)| 
+| BSC        | [https://data-seed-prebsc-1-s1.binance.org:8545/](https://data-seed-prebsc-1-s1.binance.org:8545/)      |  `0x61` |  BNB    |  [https://testnet.bscscan.com](https://testnet.bscscan.com)    | [Tutorial](https://docs.binance.org/smart-chain/wallet/metamask.html)|
 
 
 4. Load with testnet tokens:
